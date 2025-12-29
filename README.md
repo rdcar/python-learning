@@ -1,2 +1,2 @@
 # python-learning
-Conceitos aprendidos: fail fast, guard clause, tratamento de erros, loop de repetição e tomada de decisão.
+Repositório contendo resolução de exercícios, resumos e conceitos aprendidos durante a leitura de livros relacionados ao aprendizado da linguagem Python.
