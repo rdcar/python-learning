@@ -24,7 +24,23 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
-cpf = "74682489070"
+cpf = input("Digite um CPF: ").replace(".", "").replace("-", "") #Usando .replace()
+
+#Usando Regular Expressions
+import re
+entrada = input("Digite um CPF: ")
+cpf = re.sub(
+    r"[^0-9]",
+    "",
+    entrada
+) 
+
+import sys
+sequencial = entrada[0] * len(entrada) == entrada
+if sequencial:
+     print("Você digitou números sequenciais.")
+     sys.exit()
+
 cpf_nove = cpf[:9]
 resultado_1 = 0
 
